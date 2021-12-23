@@ -24,16 +24,21 @@ theme = "hugo-serif-theme"
 [menu]
   # Main Menu
   [[menu.main]]
+    name = "Home"
+    url = "/"
+      weight = 1
+
+  [[menu.main]]
     name = "Research"
     url = "/Research/"
-      weight = 1
+      weight = 2
 
   [[menu.main]]
     name = "People"
     url = "/People/"
-      weight = 2
+      weight = 3
 
   [[menu.main]]
     name = "Events"
     url = "/Events/"
-      weight = 3
+      weight = 4

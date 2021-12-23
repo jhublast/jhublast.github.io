@@ -6,7 +6,7 @@
   {{ end }}
   <div class="team-meta">
     <h2 class="event-name">{{ .Title }}</h2>
-    <p>{{ .Params.date.Format "Monday, January 2, 2006" }}</p>
+    <p>{{ dateFormat "Monday, January 2, 2006" .Params.talkdate }}</p>
     <p>Speaker: {{ .Params.speaker }}</p>
   </div>
   <div class="team-content">    {{ .Content }}</div>

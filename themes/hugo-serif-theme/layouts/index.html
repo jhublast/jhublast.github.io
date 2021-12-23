@@ -9,7 +9,7 @@
       </div>
       {{ if .Params.intro_image }}
       <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt={{ .Title }} class="intro-image{{ if .Params.intro_image_absolute }} intro-image-absolute{{ end }}{{ if .Params.intro_image_hide_on_mobile }} intro-image-hide-mobile{{ end }}" src="{{ .Params.intro_image | relURL }}" />
+        <img alt="" class="intro-image{{ if .Params.intro_image_absolute }} intro-image-absolute{{ end }}{{ if .Params.intro_image_hide_on_mobile }} intro-image-hide-mobile{{ end }}" src="{{ .Params.intro_image | relURL }}" />
       </div>
       {{ end }}
     </div>
@@ -26,7 +26,6 @@
       </div>
     </div>
     <div class="row justify-content-start">
-      {{ $people := where (where .Site.RegularPages "Type" "people") ".Params.featured" true }}
       {{ range first 6 (sort $people ".Params.weight") }}
       <div class="col-12 col-md-6 mb-0">
         {{ .Render "summary-people" }}
@@ -50,7 +49,6 @@
       </div>
     </div>
     <div class="row justify-content-start">
-      {{ $people := where (where .Site.RegularPages "Type" "events") ".Params.featured" true }}
       {{ range first 6 (sort $events ".Params.date") }}
       <div class="col-12 col-md-12 mb-1">
         {{ .Render "summary-events" }}
