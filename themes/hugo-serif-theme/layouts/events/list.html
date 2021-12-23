@@ -1,4 +1,4 @@
-{{ define "body_classes" }}page-services-list{{ end }}
+{{ define "body_classes" }}page-team-list{{ end }}
 
 {{ define "main" }}
 <div class="intro">
@@ -10,7 +10,7 @@
       {{ if .Params.intro_image }}
       <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
         <img
-          alt={{ .Title }}
+          alt="{{ .Title }}"
           class="intro-image{{ if .Params.intro_image_absolute }} intro-image-absolute{{ end }}{{ if .Params.intro_image_hide_on_mobile }} intro-image-hide-mobile{{ end }}"
           src="{{ .Params.intro_image | relURL }}" />
       </div>
@@ -19,10 +19,10 @@
   </div>
 </div>
 
-<div class="container pt-6 pb-6">
+<div class="container">
   <div class="row">
-    {{ range .Pages.ByWeight }}
-    <div class="col-12 col-md-6 mb-3">{{ .Render "summary" }}</div>
+    {{ range .Pages.ByDate  }}
+    <div class="col-12 col-md-12 mb-1">{{ .Render "summary-events" }}</div>
     {{ end }}
   </div>
 </div>

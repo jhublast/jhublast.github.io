@@ -10,5 +10,5 @@
     </h2>
     <p class="team-description">{{ .Params.Jobtitle }}</p>
   </div>
-  <div class="team-content">    {{ .Content | truncate (.Site.Params.team.summary_large_truncate | default 120 ) "…" }}</div>
+  <div class="team-content">    {{ .Content }}</div>
 </div>

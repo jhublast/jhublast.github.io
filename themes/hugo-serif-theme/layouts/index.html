@@ -51,7 +51,7 @@
     </div>
     <div class="row justify-content-start">
       {{ $people := where (where .Site.RegularPages "Type" "events") ".Params.featured" true }}
-      {{ range first 6 (sort $events ".Params.weight") }}
+      {{ range first 6 (sort $events ".Params.date") }}
       <div class="col-12 col-md-12 mb-1">
         {{ .Render "summary-events" }}
       </div>
