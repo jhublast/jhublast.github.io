@@ -1,0 +1,72 @@
+{{ define "body_classes" }}page-home{{ end }}
+
+{{ define "main" }}
+<div class="intro">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        {{ .Content }}
+      </div>
+      {{ if .Params.intro_image }}
+      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+        <img alt={{ .Title }} class="intro-image{{ if .Params.intro_image_absolute }} intro-image-absolute{{ end }}{{ if .Params.intro_image_hide_on_mobile }} intro-image-hide-mobile{{ end }}" src="{{ .Params.intro_image | relURL }}" />
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+{{ $people := where (where .Site.RegularPages "Type" "people") ".Params.featured" true }}
+{{if gt (len $people) 0}}
+<div class="strip">
+  <div class="container pt-6 pb-6 pb-md-10">
+    <div class="row">
+      <div class="col-12">
+        <h1 style="font-size: 2.5rem;" class="mb-4">Leadership</h1>
+      </div>
+    </div>
+    <div class="row justify-content-start">
+      {{ $people := where (where .Site.RegularPages "Type" "people") ".Params.featured" true }}
+      {{ range first 6 (sort $people ".Params.weight") }}
+      <div class="col-12 col-md-6 mb-0">
+        {{ .Render "summary-people" }}
+      </div>
+      {{ end }}
+    </div>
+    <div class="people-box">
+        <center><a href=people class="button">See all members</a>
+    </div>
+  </div>
+</div>
+{{end}}
+
+{{ $events := where (where .Site.RegularPages "Type" "events") ".Params.featured" true }}
+{{if gt (len $events) 0}}
+<div class="strip">
+  <div class="container pt-0 pb-6 pb-md-10">
+    <div class="row">
+      <div class="col-12">
+        <h1 style="font-size: 2.5rem;" class="mb-4">Upcoming  Events</h1>
+      </div>
+    </div>
+    <div class="row justify-content-start">
+      {{ $people := where (where .Site.RegularPages "Type" "events") ".Params.featured" true }}
+      {{ range first 6 (sort $events ".Params.weight") }}
+      <div class="col-12 col-md-12 mb-1">
+        {{ .Render "summary-events" }}
+      </div>
+      {{ end }}
+    </div>
+      <div class="events-box">
+        <center><a href=events class="button">See all events</a>
+</center>
+      </div>
+  </div>
+</div>
+{{end}}
+
+
+{{ end }}
+
+{{ define "footer_js" }}
+{{ end }}

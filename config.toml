@@ -1,0 +1,39 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "BLAST Working Group"
+themesDir = "themes"
+theme = "hugo-serif-theme"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.55.0"
+    
+[params]
+
+  [params.logo]
+    mobile = "images/logo/logo-mobile.svg"
+    mobile_height = "36px"
+    desktop = "images/logo/logo.svg"
+    desktop_height = "36px"
+    alt = "BLAST"
+
+  [params.team]
+    summary_large_truncate = 120  # How many characters to include in the summary of the team bios (large layout) before truncating
+
+[menu]
+  # Main Menu
+  [[menu.main]]
+    name = "Research"
+    url = "/Research/"
+      weight = 1
+
+  [[menu.main]]
+    name = "People"
+    url = "/People/"
+      weight = 2
+
+  [[menu.main]]
+    name = "Events"
+    url = "/Events/"
+      weight = 3

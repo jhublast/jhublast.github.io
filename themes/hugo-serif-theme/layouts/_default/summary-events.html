@@ -1,0 +1,13 @@
+<div class="team team-summary team-summary-large">
+  {{ if .Params.image }}
+  <div class="team-image">
+    <img alt="Photo of {{ .Title }}" class="img-fluid mb-2" src="{{ .Params.image | relURL }}" />
+  </div>
+  {{ end }}
+  <div class="team-meta">
+    <h2 class="event-name">{{ .Title }}</h2>
+    <p>{{ .Params.date.Format "Monday, January 2, 2006" }}</p>
+    <p>Speaker: {{ .Params.speaker }}</p>
+  </div>
+  <div class="team-content">    {{ .Content | truncate (.Site.Params.team.summary_large_truncate | default 120 ) "…" }}</div>
+</div>
