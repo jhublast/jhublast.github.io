@@ -27,7 +27,7 @@
     </div>
     <div class="row justify-content-start">
       {{ range first 6 (sort $people ".Params.weight") }}
-      <div class="col-12 col-md-6 mb-0">
+      <div class="col-12 col-md-6 mb-2">
         {{ .Render "summary-people" }}
       </div>
       {{ end }}
@@ -50,7 +50,7 @@
     </div>
     <div class="row justify-content-start">
       {{ range first 6 (sort $events ".Params.date") }}
-      <div class="col-12 col-md-12 mb-1">
+      <div class="col-12 col-md-12 mb-2">
         {{ .Render "summary-events" }}
       </div>
       {{ end }}
