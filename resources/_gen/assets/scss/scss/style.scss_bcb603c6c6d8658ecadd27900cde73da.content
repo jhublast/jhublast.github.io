@@ -4104,7 +4104,7 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e4e5ee;
+  border-bottom: 1px solid #ecedf4;
   padding: 10px 0px; }
   .header .header-title {
     font-size: 1.3rem;
@@ -4367,7 +4367,7 @@ ol {
 .call {
   position: relative;
   overflow: hidden;
-  background-color: #e4e5ee;
+  background-color: #ecedf4;
   border-radius: 4px;
   width: 100%;
   display: flex;
@@ -4386,7 +4386,7 @@ ol {
   .call .call-box-bottom {
     flex: auto;
     padding: 20px;
-    border-top: 1px solid #d4d6e4; }
+    border-top: 1px solid #dcdeeb; }
     @media (min-width: 576px) {
       .call .call-box-bottom {
         flex: 0 0 auto;
@@ -4481,7 +4481,7 @@ ol {
 
 .content hr {
   border: none;
-  border-bottom: 1px solid #e4e5ee; }
+  border-bottom: 1px solid #ecedf4; }
 
 .content table {
   width: 100%;
@@ -4491,14 +4491,14 @@ ol {
   .content table td {
     padding: 5px;
     vertical-align: top;
-    border-top: 1px solid #e4e5ee; }
+    border-top: 1px solid #ecedf4; }
   .content table thead th {
     vertical-align: bottom;
-    border-bottom: 1px solid #e4e5ee;
+    border-bottom: 1px solid #ecedf4;
     text-align: left;
     font-weight: bold; }
   .content table tbody + tbody {
-    border-top: 1px solid #e4e5ee; }
+    border-top: 1px solid #ecedf4; }
 
 .content blockquote {
   padding: 0 1em;
@@ -4585,7 +4585,7 @@ ol {
   background-color: white; }
 
 .strip-grey {
-  background-color: #e4e5ee; }
+  background-color: #ecedf4; }
 
 .strip-diagonal {
   transform: skewY(5deg);
@@ -4628,7 +4628,7 @@ ol {
 
 .feature {
   height: 100%;
-  border: 1px solid #e4e5ee;
+  border: 1px solid #ecedf4;
   border-radius: 3px;
   padding: 20px;
   background-color: #ffffff;
@@ -4693,7 +4693,7 @@ ol {
     flex: 1 0 100%; }
 
 .team-summary-large {
-  background-color: #e4e5ee;
+  background-color: #ecedf4;
   padding: 30px;
   border-radius: 3px; }
   .team-summary-large .team-image {
