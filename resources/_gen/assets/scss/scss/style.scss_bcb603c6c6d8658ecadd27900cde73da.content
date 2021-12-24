@@ -4108,8 +4108,8 @@ ol {
   padding: 10px 0px; }
   .header .header-title {
     font-size: 1.3rem;
-    font-family: "Playfair Display", serif, -apple-system;
-    font-weight: bold;
+    font-family: "PT Serif", serif, -apple-system;
+    font-weight: 900;
     margin-bottom: 10px; }
     @media (min-width: 576px) {
       .header .header-title {
@@ -4143,8 +4143,8 @@ ol {
   .footer .footer-title {
     color: #ffffff;
     font-size: 1.3rem;
-    font-family: "Playfair Display", serif, -apple-system;
-    font-weight: bold;
+    font-family: "PT Serif", serif, -apple-system;
+    font-weight: 800;
     margin-bottom: 10px; }
     @media (min-width: 576px) {
       .footer .footer-title {
