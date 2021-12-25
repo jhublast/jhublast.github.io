@@ -4544,9 +4544,40 @@ ol {
       .intro p {
         width: 80%; } }
 .intro-small {
-  padding-top: 100px;
-  padding-bottom: 30px; }
-
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .intro-small {
+      padding-top: 40px;
+      padding-bottom: 20px; } }
+  .intro-small h1 {
+    color: #2f2f41;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.2; }
+    @media (min-width: 768px) {
+      .intro-small h1 {
+        width: 80%;
+        font-size: 48px; } }
+    @media (min-width: 992px) {
+      .intro-small h1 {
+        font-size: 50px; } }
+  .intro-small h2 {
+    width: 80%;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    color: #2f2f41;
+    font-family: Helvetica, Arial, sans-serif, -apple-system; }
+  .intro-small p {
+    font-size: 1.2rem;
+    font-weight: light;
+    line-height: 1.5;
+    color: #5C5A5A; }
+    @media (min-width: 768px) {
+      .intro-small p {
+        width: 80%; } }
 .intro-image {
   width: 100%;
   height: auto;

@@ -1,5 +1,5 @@
 ---
-title: 'MCMC Research'
+title: 'MCMC'
 date: 2020-12-20T13:41:30+10:00
 intro_image: "images/research/mcmc.png"
 intro_image_hide_on_mobile: true
