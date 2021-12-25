@@ -6,6 +6,7 @@ featured: true
 image: "images/people/abhi_datta.jpg"
 homepage: "https://abhidatta.com/"
 jobtitle: "Assistant Professor"
+department: "Department of Biostatistics"
 Twitterhandle: "datta_science"
 weight: 1
 ---
