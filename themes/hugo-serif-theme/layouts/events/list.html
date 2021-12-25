@@ -15,7 +15,7 @@
       {{/* Only display future talks at build time */}}
       {{ $t := time .Params.talkdate}}  
       {{if ($t.After now)}}
-        <div class="col-12 col-md-12 mb-6">{{ .Render "summary-events" }}</div>
+        <div class="col-12 col-md-12 mb-4">{{ .Render "summary-events" }}</div>
       {{ end }}
     </div>
   {{ end }}
