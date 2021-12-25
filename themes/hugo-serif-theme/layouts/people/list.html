@@ -22,7 +22,7 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-    <h2 style="font-size: 2.5rem;" class="mb">Leadership</h2>
+      <center><h2 style="font-size: 2.5rem;" class="mb">Leadership</h2></center>
     </div>
     {{ range where .Pages.ByWeight ".Params.featured" true }}
     <div class="col-12 col-md-6 mb-0">{{ .Render "summary-people" }}</div>
@@ -30,7 +30,7 @@
   </div>
   <div class="row  pt-6 pb-6">
       <div class="col-12">
-    <h2 style="font-size: 2.5rem;" class="mb">Affiliates</h2>
+    <center><h2 style="font-size: 2.5rem;" class="mb">Affiliates</h2></center>
     </div>
     {{ range where .Pages.ByWeight ".Params.featured" "!=" true}}
     <div class="col-12 col-md-4 mb-0">{{ .Render "summary-people" }}</div>
