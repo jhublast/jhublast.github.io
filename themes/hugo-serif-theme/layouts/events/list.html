@@ -20,14 +20,14 @@
 </div>
 
 <div class="container">
-  <div class="row">
-    {{ range .Pages.ByParam "talkdate" }}
+  {{ range .Pages.ByParam "talkdate" }}
+    <div class="row">
       {{/* Only display future talks at build time */}}
       {{ $t := time .Params.talkdate}}  
       {{if ($t.After now)}}
         <div class="col-12 col-md-12 mb-1">{{ .Render "summary-events" }}</div>
       {{ end }}
-    {{ end }}
-  </div>
+    </div>
+  {{ end }}
 </div>
 {{ end }}

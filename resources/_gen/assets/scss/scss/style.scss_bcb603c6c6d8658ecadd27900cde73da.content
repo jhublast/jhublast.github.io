@@ -4550,7 +4550,7 @@ ol {
 .intro-image {
   width: 100%;
   height: auto;
-  margin-top: -40px; }
+  margin-top: 0px; }
 
 .intro-image-absolute {
   max-width: none;
@@ -4577,6 +4577,10 @@ ol {
   @media (min-width: 768px) {
     .intro-image-hide-mobile {
       display: block; } }
+.research-image {
+  width: 100%;
+  height: auto; }
+
 .strip {
   background: white;
   background-repeat: no-repeat; }
