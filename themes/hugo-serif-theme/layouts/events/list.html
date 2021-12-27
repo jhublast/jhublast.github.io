@@ -20,11 +20,25 @@
 </div>
 
 <div class="container">
+  <center><h2 style="font-size: 2.5rem;" class="mb">Upcoming</h2></center>
   {{ range .Pages.ByParam "talkdate" }}
     <div class="row">
       {{/* Only display future talks at build time */}}
       {{ $t := time .Params.talkdate}}  
       {{if ($t.After now)}}
+        <div class="col-12 col-md-12 mb-2">{{ .Render "summary-events" }}</div>
+      {{ end }}
+    </div>
+  {{ end }}
+</div>
+
+<div class="container">
+  <center><h2 style="font-size: 2.5rem;" class="mb">Past</h2></center>
+  {{ range (.Pages.ByParam "talkdate").Reverse }}
+    <div class="row">
+      {{/* Only display future talks at build time */}}
+      {{ $t := time .Params.talkdate}}  
+      {{if ($t.Before now)}}
         <div class="col-12 col-md-12 mb-2">{{ .Render "summary-events" }}</div>
       {{ end }}
     </div>
