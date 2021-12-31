@@ -4698,48 +4698,48 @@ ol {
     .social a:hover {
       opacity: 0.8; }
 
-.team-summary {
+.summary {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row; }
-  .team-summary .team-image {
+  .summary .image {
     height: 60px;
     width: 60px;
     margin-right: 10px;
     border-radius: 50%;
     overflow: hidden; }
-    .team-summary .team-image img {
+    .summary .image img {
       width: 60px;
       height: auto; }
-  .team-summary .team-meta {
+  .summary .meta {
     flex: 1; }
-    .team-summary .team-meta h2 {
+    .summary .meta h2 {
       margin: 0;
       line-height: 1.5em;
       font-size: 22px;
       font-weight: normal; }
-    .team-summary .team-meta p {
+    .summary .meta p {
       color: #2f2f41;
       line-height: 1.5em;
       text-transform: uppercase;
       margin: 0;
       font-size: 12px;
       font-weight: 500; }
-  .team-summary .team-content {
+  .summary .content {
     margin-top: 20px;
     flex: 1 0 100%; }
 
-.team-summary-large {
+.summary-large {
   background-color: #ecedf4;
   padding: 30px;
   border-radius: 3px; }
-  .team-summary-large .team-image {
+  .summary-large .image {
     height: 90px;
     width: 90px;
     margin-right: 20px;
     border-radius: 50%;
     overflow: hidden; }
-    .team-summary-large .team-image img {
+    .summary-large .image img {
       width: 90px;
       height: auto; }
 

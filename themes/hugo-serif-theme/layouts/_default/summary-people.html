@@ -1,15 +1,15 @@
-<div class="team team-summary team-summary-large">
+<div class="team summary summary-large">
   {{ if .Params.image }}
-  <div class="team-image">
+  <div class="image">
     <img alt="Photo of {{ .Title }}" class="img-fluid mb-2" src="{{ .Params.image | relURL }}" />
   </div>
   {{ end }}
-  <div class="team-meta">
+  <div class="meta">
     <h2 class="team-name">
     <a href="{{ .Params.homepage }}">{{ .Title }}</a>
     </h2>
-    <p class="team-description">{{ .Params.jobtitle }}</p>
-    <p class="team-description">{{ .Params.department }}</p>
+    <p class="title">{{ .Params.jobtitle }}</p>
+    <p class="department">{{ .Params.department }}</p>
   </div>
-  <div class="team-content">    {{ .Content }}</div>
+  <div class="content">    {{ .Content }}</div>
 </div>

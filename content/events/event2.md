@@ -3,6 +3,7 @@ title: 'Another Talk about Bayesian Stuff'
 date: 2020-12-29T13:44:30+10:00
 talkdate: 2022-12-28T13:44:30+10:00
 speaker: 'Andrew Chin'
+speakerlink: 'www.google.com'
 draft: false
 featured: false
 ---

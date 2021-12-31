@@ -1,8 +1,8 @@
-.team-summary {
+.summary {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  .team-image {
+  .image {
     height: 60px;
     width: 60px;
     margin-right: 10px;
@@ -13,7 +13,7 @@
       height: auto;
     }
   }
-  .team-meta {
+  .meta {
     flex: 1;
     h2 {
       margin: 0;
@@ -30,17 +30,17 @@
       font-weight: 500;
     }
   }
-  .team-content {
+  .content {
     margin-top: 20px;
     flex: 1 0 100%;
   }
 }
 
-.team-summary-large {
+.summary-large {
   background-color: $white-offset;
   padding: 30px;
   border-radius: 3px;
-  .team-image {
+  .image {
     height: 90px;
     width: 90px;
     margin-right: 20px;
