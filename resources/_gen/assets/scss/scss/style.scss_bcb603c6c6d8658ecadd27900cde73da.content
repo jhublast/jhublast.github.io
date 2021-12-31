@@ -4743,13 +4743,6 @@ ol {
       width: 90px;
       height: auto; }
 
-.page-services-single .content > p:first-of-type {
-  font-size: 1.6rem;
-  line-height: 1.4;
-  margin-bottom: 40px;
-  font-weight: regular;
-  color: #686868; }
-
 body {
   font-size: 16px;
   line-height: 1.2;
