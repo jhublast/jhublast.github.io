@@ -5,10 +5,10 @@ draft: false
 featured: true
 image: "images/people/abhi_datta.jpg"
 homepage: "https://abhidatta.com/"
-jobtitle: "Assistant Professor"
+jobtitle: "Associate Professor"
 department: "Department of Biostatistics"
 Twitterhandle: "datta_science"
 weight: 1
 ---
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Dr. Datta develops statistical and machine learning methods for large spatial datasets (Gaussian Processes, random forests, graphical models) and Bayesian methods (hierarchical models, transfer learning, generalized Bayes) for multi-source epidemiological datasets.
