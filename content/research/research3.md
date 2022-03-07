@@ -1,11 +1,11 @@
 ---
-title: 'More Stuff'
+title: 'Precision Medicine/Health Data Analytics'
 date: 2020-12-20T13:41:30+10:00
 intro_image: "images/research/other.png"
 draft: false
 weight: 3
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in. 
+For a specific disease and clinical question of interest, a single data source rarely provide a sufficient number of patients, longitudinal coverage, and breadth of information. Generating actionable clinical insights on how to treat individual patients necessitates integrating patient experiences across multiple data sources. Bayesian inference provides a natural framework to account for the hierarchical structure of such data as well as to incorporate our scientific understanding of the underlying clinical and biological processes. We build Bayesian machinery and software to support enterprises such as the Johns Hopkins's [inHealth](https://www.hopkinsmedicine.org/inhealth/) Precision Medicine initiative and the [Observational Health Data Science and Informatics](https://ohdsi.org/) collaborative.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+(Figure: the [Active Surveillance](https://tic.jh.edu/work/active-care/) program aims to minimize the harm and waste from unwarranted surgical removal of a low-risk prostate cancer by leveraging surrogate measurements to quantify the cancer state. Hopkins's participation in the GAP3 global database provides an opportunity to further improve individual-level prediction through Bayesian hierarchical modeling.)
