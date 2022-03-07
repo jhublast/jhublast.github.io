@@ -11,4 +11,4 @@ Twitterhandle: "_aki_nishimura"
 weight: 3
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in.
+Aki uses Bayesian methods and statistical computing to tackle methodological challenges in healthcare analytics and large-scale biomedical applications.
