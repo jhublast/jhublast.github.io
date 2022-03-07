@@ -24,25 +24,24 @@
     {{ range $index, $page := .Pages.ByWeight }}
       <div class="row">
         {{if not (modBool $index 2)}}
-          <div class="col-12 col-md-7 col-lg-6 order-2 order-md-2 mb-8">
+          <div class="col-12 col-md-5 col-lg-5 order-2 order-md-2 mb-8">
             {{ .Render "summary-research" }}
           </div>
           {{ if .Params.intro_image }}
-            <div class="col-12 col-md-5 col-lg-6 order-1 order-md-1 mb-8 position-relative">
-              <img alt="" class="research-image" src="{{ .Params.intro_image | relURL }}" />
+            <div class="col-12 col-md-7 col-lg-7 order-1 order-md-1 mb-8 position-relative">
+              <img alt="" class="research-image" src="{{ .Params.intro_image | relURL }}"/>
             </div>
           {{ end }}
         {{ else }}
-          <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1 mb-8">
+          <div class="col-12 col-md-5 col-lg-5 order-2 order-md-1 mb-8">
             {{ .Render "summary-research" }}
           </div>
           {{ if .Params.intro_image }}
-            <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 mb-8 position-relative">
-              <img alt="" class="research-image" src="{{ .Params.intro_image | relURL }}" />
+            <div class="col-12 col-md-7 col-lg-7 order-1 order-md-2 mb-8 position-relative">
+              <img alt="" class="research-image" src="{{ .Params.intro_image | relURL }}"/>
             </div>
           {{ end }}
         {{ end }}
-
        </div>
     {{ end }}
 </div>

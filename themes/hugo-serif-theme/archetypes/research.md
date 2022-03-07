@@ -1,9 +1,9 @@
 ---
-title: 'More Stuff'
-date: 2020-12-20T13:41:30+10:00
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
 intro_image: "images/research/other.png"
 draft: false
-weight: 3
+weight: 10  # change to reorder sections
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in. 

@@ -1,12 +1,10 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
+title: '{{ replace .Name "-" " " | title }}'
 date: {{ .Date }}
-image: "images/team/default.png"
-jobtitle: "Employee"
-linkedinurl: 'https://www.linkedin.com/'
+talkdate: 2022-12-24T13:44:30+10:00
+speaker: 'Speaker Name'
+speakerlink: 'Speaker Website'
 draft: false
-weight: 100
-promoted: false
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in.

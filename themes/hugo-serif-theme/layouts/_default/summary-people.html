@@ -1,7 +1,9 @@
 <div class="summary summary-large">
   {{ if .Params.image }}
   <div class="image">
-    <img alt="Photo of {{ .Title }}" class="img-fluid mb-2" src="{{ .Params.image | relURL }}" />
+    <a href="{{ .Params.homepage }}">
+      <img alt="Photo of {{ .Title }}" class="img-fluid mb-2" src="{{ .Params.image | relURL }}" />
+    </a>
   </div>
   {{ end }}
   <div class="meta">
