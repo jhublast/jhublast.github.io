@@ -7,7 +7,7 @@ image: "images/people/abhi_datta.jpg"
 homepage: "https://abhidatta.com/"
 jobtitle: "Assistant Professor"
 department: "Department of Biostatistics"
-Twitterhandle: "datta_science"
+affiliation: "Johns Hopkins University"
 weight: 1
 ---
 
