@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://chinandrew.github.io/blast_website"
 languageCode = "en-us"
 title = "BLAST Working Group"
 themesDir = "themes"
