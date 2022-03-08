@@ -1,9 +1,9 @@
-name: github pages
+name: deploy-to-gh-pages
 
 on:
   push:
     branches:
-      - master  # Set a branch to deploy
+      - master
   pull_request:
   schedule:
     - cron: '0 5 * * *'
