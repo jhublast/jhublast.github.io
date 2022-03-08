@@ -1,5 +1,5 @@
 ---
-title: 'Homepage'
+title: "Home"
 description: "JHU Blast Working Group Website"
 intro_image: "images/cover.png"
 intro_image_absolute: true
