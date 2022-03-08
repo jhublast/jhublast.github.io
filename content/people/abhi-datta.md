@@ -11,4 +11,4 @@ affiliation: "Johns Hopkins University"
 weight: 1
 ---
 
-Dr. Datta develops statistical and machine learning methods for large spatial datasets (Gaussian Processes, random forests, graphical models) and Bayesian methods (hierarchical models, transfer learning, generalized Bayes) for multi-source epidemiological datasets.
+Abhi develops statistical and machine learning methods for large spatial datasets as well as Bayesian models for multi-source epidemiological datasets.
