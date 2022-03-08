@@ -1,7 +1,7 @@
 ---
 title: 'Spatial Statistics Seminar'
 date: 2020-12-25T13:44:30+10:00
-talkdate: 2022-12-29T13:44:30+10:00
+talkdate: 2022-03-08T13:00:00+10:00
 speaker: 'Andrew Chin'
 speakerlink: 'https://aki-nishimura.github.io/'
 draft: false
