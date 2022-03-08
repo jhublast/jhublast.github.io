@@ -1,13 +1,11 @@
 baseURL = "https://jhublast.github.io/"
 languageCode = "en-us"
 title = "BLAST Working Group"
-themesDir = "themes"
-theme = "hugo-serif-theme"
 
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.93.2"
+    min = "0.80.0"
     
 [params]
 
