@@ -7,7 +7,7 @@ image: "images/people/abhi_datta.jpg"
 homepage: "https://abhidatta.com/"
 jobtitle: "Associate Professor"
 department: "Department of Biostatistics"
-affiliation: "Johns Hopkins University"
+affiliation: 
 weight: 1
 ---
 
