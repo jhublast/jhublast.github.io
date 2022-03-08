@@ -2,9 +2,9 @@ name: github pages
 
 on:
   push:
-    branches:
-      - master  # Set a branch to deploy
   pull_request:
+  schedule:
+    - cron: '*/3 * * * *' 
 
 jobs:
   deploy:
