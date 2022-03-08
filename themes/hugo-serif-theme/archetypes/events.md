@@ -1,7 +1,7 @@
 ---
 title: '{{ replace .Name "-" " " | title }}'
 date: {{ .Date }}
-talkdate: 2022-12-24T13:44:30+10:00
+talkdate: {{ .Date }}
 speaker: 'Speaker Name'
 speakerlink: 'Speaker Website'
 draft: false

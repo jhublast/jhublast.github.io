@@ -7,7 +7,7 @@ image: 'images/people/aki_nishimura.jpg'
 homepage: "https://aki-nishimura.github.io/"
 jobtitle: "Assistant Professor"
 department: "Department of Biostatistics"
-Twitterhandle: "_aki_nishimura"
+affiliation: "Johns Hopkins University"
 weight: 3
 ---
 

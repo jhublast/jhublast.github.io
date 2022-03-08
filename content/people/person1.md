@@ -1,11 +1,11 @@
 ---
-title: 'Person 1'
-date: 2018-12-20T13:44:30+10:00
+title: "Person1"
+date: 2018-11-19T10:47:58+10:00
 draft: false
 featured: false
-homepage: "https://aki-nishimura.github.io/"
+homepage: "https://abhidatta.com/"
 jobtitle: "Postdoc"
-weight: 3
+department: "Department of Biostatistics"
+affiliation: "Johns Hopkins University"
+weight: 1
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in.

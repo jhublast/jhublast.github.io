@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://chinandrew.github.io/blast_website"
 languageCode = "en-us"
 title = "BLAST Working Group"
 themesDir = "themes"
@@ -7,7 +7,7 @@ theme = "hugo-serif-theme"
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.55.0"
+    min = "0.93.2"
     
 [params]
 
