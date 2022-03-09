@@ -1,14 +1,9 @@
 <div class="summary summary-large">
-  {{ if .Params.image }}
-  <div class="image">
-    <img alt="Photo of {{ .Title }}" class="img-fluid mb-2" src="{{ .Params.image | relURL }}" />
-  </div>
-  {{ end }}
   <div class="meta">
     <h2 class="event-name">{{ .Title }}</h2>
     <p>{{ dateFormat "Monday, January 2, 2006" .Params.talkdate }}</p>
     <p>Speaker:     <a href="{{ .Params.speakerlink}}">{{ .Params.speaker }}</a>
-</p>
+    </p>
   </div>
-  <div class="content">    {{ .Content }}</div>
+  <div class="content">{{ .Content }}</div>
 </div>

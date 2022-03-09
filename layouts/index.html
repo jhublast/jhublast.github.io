@@ -49,10 +49,10 @@
       </div>
     </div>
     <div class="row justify-content-start">
-      {{ range first 6 (sort $events ".Params.talkdate") }}
+      {{ range (sort $events ".Params.talkdate").Reverse }}
         {{ $t := time .Params.talkdate}}  
         {{if ($t.After now)}}
-          <div class="col-12 col-md-12 mb-2">
+          <div class="col-12 col-md-12 mb-4">
           {{ .Render "summary-events" }}
         </div>
         {{ end }}

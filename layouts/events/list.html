@@ -22,7 +22,7 @@
   <div class="container pb-4">
   <center><h2 style="font-size: 2.5rem;" class="mb">Upcoming</h2></center>
   {{ $hasUpcoming := false }} 
-  {{ range .Pages.ByParam "talkdate" }}
+  {{ range (.Pages.ByParam "talkdate").Reverse }}
     <div class="row">
       {{/* Only display future talks at build time */}}
       {{ $t := time .Params.talkdate}}  
@@ -36,17 +36,20 @@
     <center><h2 style="font-size: 1.5rem;" class="mb">Check back for future events!</h2></center>
   {{end}}
 </div>
-
-  <div class="container pb-4">
+<div class="container pb-4">
   <center><h2 style="font-size: 2.5rem;" class="mb">Past</h2></center>
   {{ range (.Pages.ByParam "talkdate").Reverse }}
     <div class="row">
       {{/* Only display future talks at build time */}}
       {{ $t := time .Params.talkdate}}  
-      {{if ($t.Before now)}}
-        <div class="col-12 col-md-12 mb-2">{{ .Render "summary-events" }}</div>
+      {{if and ($t.Before now) (eq (int ($t.Format "2006")) (int (.Date.Format "2006")))}}
+        <div class="col-12 col-md-12 mb-4">{{ .Render "summary-events" }}</div>
       {{ end }}
     </div>
   {{ end }}
+  <div class="people-box">
+    <center><a href=/events-archive class="button">All Past Events</a>
+  </div>
 </div>
+
 {{ end }}

@@ -1,0 +1,48 @@
+{{ define "body_classes" }}page-team-list{{ end }}
+
+{{ define "main" }}
+<div class="intro-small">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        {{ .Content }}
+      </div>
+      {{ if .Params.intro_image }}
+      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+        <img
+          alt=""
+          class="intro-image{{ if .Params.intro_image_absolute }} intro-image-absolute{{ end }}{{ if .Params.intro_image_hide_on_mobile }} intro-image-hide-mobile{{ end }}"
+          src="{{ .Params.intro_image | relURL }}" />
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ $events := where .Site.RegularPages "Type" "events" }}
+{{if gt (len $events) 0}}
+<div class="strip">
+  <div class="container pt-0 pb-4 pb-md-4">
+    <div class="row">
+    </div>
+    <div class="row justify-content-start">
+      {{ $currentyear  := 9999}} 
+      {{ range (sort $events ".Params.talkdate").Reverse }}
+        {{ $t := time .Params.talkdate}}  
+        {{if not ($t.After now)}}
+          {{ if lt (int ($t.Format "2006"))  $currentyear }}
+          <div id="outer" style="width:100%">
+            <center><h2 style="font-size: 2.5rem;" class="mb">{{ dateFormat "2006" .Params.talkdate }}</h2></center>
+          </div>
+          {{ $currentyear  = int ($t.Format "2006")}} 
+        {{ end }}
+          <div class="col-12 col-md-12 mb-4">
+        {{ .Render "summary-events-collapsible" }}
+          </div>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ end }}
