@@ -1,7 +1,7 @@
 ---
 title: 'Precision Medicine/Health Data Analytics'
 date: 2020-12-20T13:41:30+10:00
-intro_image: "images/research/other.png"
+intro_image: "images/research/precisionmedicine.png"
 draft: false
 weight: 3
 ---
