@@ -43,7 +43,7 @@
     <div class="row">
       {{/* Only display future talks at build time */}}
       {{ $t := time .Params.talkdate}}  
-      {{if and ($t.Before now) ((le $listed  4))}}
+      {{if and ($t.Before now) (le $listed 4)}}
         <div class="col-12 col-md-12 mb-4">{{ .Render "summary-events" }}</div>
         {{ $listed = add $listed  1 }} 
       {{ end }}
