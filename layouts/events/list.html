@@ -38,12 +38,14 @@
 </div>
 <div class="container pb-4">
   <center><h2 style="font-size: 2.5rem;" class="mb">Past</h2></center>
+  {{ $listed := 1 }} 
   {{ range (.Pages.ByParam "talkdate").Reverse }}
     <div class="row">
       {{/* Only display future talks at build time */}}
       {{ $t := time .Params.talkdate}}  
-      {{if and ($t.Before now) (eq (int ($t.Format "2006")) (int (.Date.Format "2006")))}}
+      {{if and ($t.Before now) ((le $listed  4))}}
         <div class="col-12 col-md-12 mb-4">{{ .Render "summary-events" }}</div>
+        {{ $listed = add $listed  1 }} 
       {{ end }}
     </div>
   {{ end }}
