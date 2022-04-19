@@ -1,11 +1,12 @@
 baseURL = "https://jhublast.github.io/"
 languageCode = "en-us"
 title = "BLAST Working Group"
+timeZone = "America/New_York"
 
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.80.0"
+    min = "0.90.0"
     
 [params]
 
