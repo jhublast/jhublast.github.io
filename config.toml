@@ -9,6 +9,7 @@ timeZone = "America/New_York"
     min = "0.90.0"
     
 [params]
+  google_analytics_id = "G-7VNHD4PKQE"
 
   [params.logo]
     mobile = "images/logo/logo-mobile.svg"
