@@ -2,7 +2,12 @@
   <div class="meta">
     <h2 class="event-name">{{ .Title }}</h2>
     <p>{{ dateFormat "Monday, January 2, 2006" .Params.talkdate }}</p>
-    <p>Speaker:     <a href="{{ .Params.speakerlink}}">{{ .Params.speaker }}</a>
+    <p>Speaker:    
+    {{if .Params.speakerlink}} 
+    <a href="{{ .Params.speakerlink}}">{{ .Params.speaker }}</a>
+    {{else}}
+    {{ .Params.speaker }}
+    {{end}}
     </p>
   </div>
   <div class="content">{{ .Content }}</div>
