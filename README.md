@@ -1,6 +1,6 @@
 # BLAST Working Group Website
 
-This is the repository for the [BLAST working group website](jhublast.github.io). It is built on [Hugo](https://gohugo.io/), using a heavily modified [Hugo Serif Theme](https://github.com/zerostaticthemes/hugo-serif-theme).
+This is the repository for the [BLAST working group website](https://jhublast.github.io/). It is built on [Hugo](https://gohugo.io/), using a heavily modified [Hugo Serif Theme](https://github.com/zerostaticthemes/hugo-serif-theme).
 
 Source code for the website is contained in the `master` branch, and a Github Action will build the website to the `gh-pages` branch which is deployed via Github Pages. 
 This action runs on push to `master` as well as every night at 5 AM UTC, which lets the Events page recategorize the Upcoming/Past events each day.
