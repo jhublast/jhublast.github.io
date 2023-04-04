@@ -8,6 +8,9 @@
     {{else}}
       {{ .Params.speaker }}
     {{end}}
+    {{if .Params.speakeraffiliation }} 
+      ({{ .Params.speakeraffiliation }})
+    {{end}}
     </p>  </div>
   <div>
     <input id="{{ .File.UniqueID }}" class="toggle" type="checkbox">

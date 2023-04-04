@@ -8,6 +8,9 @@
     {{else}}
       {{ .Params.speaker }}
     {{end}}
+    {{if .Params.speakeraffiliation}} 
+      ({{ .Params.speakeraffiliation }})
+    {{end}}
     </p>
   </div>
   <div class="content">{{ .Content }}</div>
