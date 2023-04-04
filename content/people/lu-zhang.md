@@ -6,7 +6,7 @@ featured: false
 image: "images/people/lu_zhang.jpg"
 homepage: "https://luzhangstat.github.io/"
 jobtitle: "Postdoc"
-department: "Department of Statistics (Columbia University)"
-affiliation:
+department: "Department of Statistics"
+affiliation: "Columbia University"
 weight: 1
 ---

@@ -6,6 +6,6 @@ featured: false
 homepage: ""
 jobtitle: ""
 department: "Department of Biostatistics"
-affiliation: "Johns Hopkins University"
+affiliation: "" # only include if not JHU
 weight: 10 # change to reorder people
 ---

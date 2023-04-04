@@ -17,8 +17,11 @@
     </h2>
     {{ end }}
     <p class="title">{{ .Params.jobtitle }}</p>
-    <p class="title">{{ .Params.affiliation }}</p>
-    <p class="department">{{ .Params.department }}</p>
+    <p class="department">{{ .Params.department }}
+      {{if .Params.affiliation}} 
+        ({{ .Params.affiliation }})
+      {{end}}
+  </p>
   </div>
   <div class="content">    {{ .Content }}</div>
 </div>
