@@ -1,6 +1,6 @@
 ---
-title: 'Research'
-description: "BLAST research"
+title: "Research"
+description: "Research areas of the BLAST Working Group."
 ---
 
 # Research

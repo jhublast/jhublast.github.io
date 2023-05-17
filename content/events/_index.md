@@ -1,6 +1,6 @@
 ---
-title: 'Events'
-description: "BLAST events"
+title: "Events"
+description: "Past and upcoming events for the BLAST Working Group."
 ---
 
 # Events

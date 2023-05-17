@@ -1,6 +1,6 @@
 ---
-title: 'People'
-description: "BLAST members"
+title: "People"
+description: "Affiliates of the BLAST Working Group."
 ---
 
 # People
