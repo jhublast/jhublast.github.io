@@ -5,7 +5,7 @@ draft: false
 featured: true
 image: "images/people/abhi_datta.jpg"
 homepage: "https://abhidatta.com/"
-jobtitle: "Associate Professor"
+jobtitle: "Professor"
 department: "Department of Biostatistics"
 affiliation: 
 weight: 1
