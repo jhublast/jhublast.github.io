@@ -13,9 +13,9 @@ There are three types of primary content: research, people, events. After instal
 For example, to add a new event:
 1. Run `hugo new events/<filename>.md` (I've been using `YYYYMMDD.md` as the filename where `YYYYMMDD` corresponds to the date of the talk.)
 2. Navigate to `content/events/<filename>.md` and open the Markdown file in you preferred text editor.
-3. Edit the `title`, `talkdate`, etc fields in the front matter, and add the abstract to the body. Note: the `date` field is auto generated for the time the file was created and is not used, so no need to change it. The `talkdate` field should be the datetime of the talk. If there is no speaker website, leave the field blank. If for some reason you do not want the event published immediately, you can set `draft` is to `true`.
-4. If you would like to preview the changes locally, run `hugo server` to start a local version of the website.
-5. Add and commit your changes, either to a branch to merge into `master`, or directly into `master`. 
+3. Edit the `title`, `talkdate`, etc fields in the front matter, and add the abstract to the body. Note: the `date` field is auto generated for the time the file was created and is not used, so no need to change it. The `talkdate` field should be the datetime of the talk. If there is no speaker website, leave the field blank or empty string `''`. If for some reason you do not want the event published immediately, you can set `draft` is to `true`.
+4. If you would like to preview the changes locally, run `hugo server` from the root directory to start a local version of the website.
+5. Add and commit your changes, either to a branch to merge into `master`, or directly into `master`. Due to the infrequency of updates and small amount of maintainers, pushing to `master` has been fine.
 6. Changes should appear live on the website in about 1 minute. You can monitor the status in the [Github Actions](https://github.com/jhublast/jhublast.github.io/actions) page (`deploy-to-gh-pages` is the website build by Hugo, `pages build and deployment` publishes to the live site. NOTE: If no events have been added for a while (e.g. over summer break), Github might make the workflow inactive, and you will have to manually reactivate them from the Actions page.
 
 
