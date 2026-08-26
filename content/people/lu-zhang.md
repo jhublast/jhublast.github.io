@@ -5,8 +5,8 @@ draft: false
 featured: false
 image: "images/people/lu_zhang.jpg"
 homepage: "https://luzhangstat.github.io/"
-jobtitle: "Postdoc"
+jobtitle: "Assistant Professor"
 department: "Department of Statistics"
-affiliation: "Columbia University"
+affiliation: "University of Southern California"
 weight: 1
 ---
