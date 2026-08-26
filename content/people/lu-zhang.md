@@ -6,7 +6,7 @@ featured: false
 image: "images/people/lu_zhang.jpg"
 homepage: "https://luzhangstat.github.io/"
 jobtitle: "Assistant Professor"
-department: "Department of Statistics"
+department: "Division of Biostatistics"
 affiliation: "University of Southern California"
 weight: 1
 ---
